@@ -1,0 +1,26 @@
+{
+  "name": "rainyn",
+  "version": "1.0.0",
+  "description": "click on it and it will say yes or no for rain maybe",
+  "main": "script.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jabbab-cs/RainYN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jabbab-cs/RainYN/issues"
+  },
+  "homepage": "https://github.com/jabbab-cs/RainYN#readme",
+  "dependencies": {
+    "axios": "^1.14.0",
+    "express": "^5.2.1"
+  }
+}
