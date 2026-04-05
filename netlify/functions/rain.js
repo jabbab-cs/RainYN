@@ -34,6 +34,9 @@ exports.handler = async (event, context) => {
     const willRain = todaysForecast.some(prob => prob > 50);
 
     const result = willRain ? 'Yes☔' : 'No☀️';
+    const rainImageUrl = 'https://your-site-name.netlify.app/Assets/WillRain.png';
+    const noRainImageUrl = 'https://your-site-name.netlify.app/Assets/NoRain.png';
+    const imageUrl = willRain ? rainImageUrl : noRainImageUrl;
 
     return {
       statusCode: 200,
@@ -41,6 +44,7 @@ exports.handler = async (event, context) => {
         location: location,
         willRain: willRain,
         message: result,
+        imageUrl: imageUrl,
         probability: todaysForecast
       })
     };
